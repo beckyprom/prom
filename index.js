@@ -1,4 +1,34 @@
 
+// Function to filter cattle based on search input
+function filterCattle(searchText) {
+    searchText = searchText.toLowerCase();
+    return cattleData.filter(cattle => {
+        return (
+            cattle.name.toLowerCase().includes(searchText) ||
+            cattle.Description.toLowerCase().includes(searchText) ||
+            cattle.Origin.toLowerCase().includes(searchText)
+        );
+    });
+}
+
+// Function to update the displayed cattle list
+function updateCattleList(searchText) {
+    const cattleList = document.getElementById('cattle-list');
+    const cattleDetails = document.getElementById('cattle-details');
+
+    const filteredCattle = filterCattle(searchText);
+
+    cattleList.innerHTML = '';
+
+    filteredCattle.forEach(cattle => {
+        const cattleName = createCattleNameElement(cattle.name, cattle.image);
+        const detailsButton = createDetailsButton(cattle);
+
+        cattleList.appendChild(cattleName);
+        cattleList.appendChild(detailsButton);
+    });
+}
+
 // Function to create a cattle name element
 function createCattleNameElement(name, imageSrc) {
     const cattleName = document.createElement('div');
@@ -46,22 +76,34 @@ function fetchAndDisplayCattleNames() {
             return response.json();
         })
         .then(data => {
-            const cattleList = document.getElementById('cattle-list');
-            const cattleData = data.Cattles;
-
-            cattleData.forEach(cattle => {
-                const cattleName = createCattleNameElement(cattle.name, cattle.image);
-                const detailsButton = createDetailsButton(cattle);
-                cattleList.appendChild(cattleName);
-                cattleList.appendChild(detailsButton);
-            });
+            cattleData = data.Cattles;
+            // Display all cattle initially
+            updateCattleList('');
         })
         .catch(error => {
             console.error('Error:', error);
         });
 }
 
-// Call the fetchAndDisplayCattleNames function to load and display the cattle names
-fetchAndDisplayCattleNames();
+// Add event listeners for the search input and button
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+
+    searchInput.addEventListener('input', () => {
+        const searchText = searchInput.value;
+        updateCattleList(searchText);
+    });
+
+    searchButton.addEventListener('click', () => {
+        const searchText = searchInput.value;
+        updateCattleList(searchText);
+    });
+
+    // Call the fetchAndDisplayCattleNames function to load and display the cattle names
+    fetchAndDisplayCattleNames();
+});
+
+
 
 
