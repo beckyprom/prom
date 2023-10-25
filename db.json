@@ -1,9 +1,9 @@
- {
+{
   "Cattles":[
         {
          "id": 1,
          "name": "Holstain Friesian",
-         "image": "https://en.wikipedia.org/wiki/Holstein_Friesian#/media/File:Holstein_Friesian_UK_Yorkshire_July_2011.jpg",
+         "image": "https://cdn.agriland.ie/uploads/2016/07/IMG_6787-1280x720.jpg",
          "Origin": "United Kingdom",
          "Description": "Dairy cattle",
          "Mass": "female:380-500kg male:450-650kg"
@@ -172,4 +172,3 @@
       }
     ]
   }
-      
