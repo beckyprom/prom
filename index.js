@@ -1,3 +1,4 @@
+let cattleData; // Store the cattle data from your JSON file
 
 // Function to filter cattle based on search input
 function filterCattle(searchText) {
@@ -21,7 +22,7 @@ function updateCattleList(searchText) {
     cattleList.innerHTML = '';
 
     filteredCattle.forEach(cattle => {
-        const cattleName = createCattleNameElement(cattle.name, cattle.image);
+        const cattleName = createCattleNameElement(cattle);
         const detailsButton = createDetailsButton(cattle);
 
         cattleList.appendChild(cattleName);
@@ -30,12 +31,20 @@ function updateCattleList(searchText) {
 }
 
 // Function to create a cattle name element
-function createCattleNameElement(name, imageSrc) {
+function createCattleNameElement(cattle) {
+    const name = cattle.name;
+    const imageSrc = cattle.image;
+    const details = {
+        Origin: cattle.Origin,
+        Description: cattle.Description,
+        Mass: cattle.Mass
+    };
+
     const cattleName = document.createElement('div');
     cattleName.className = 'cattle-name'; // Add a CSS class for styling
     cattleName.textContent = name;
     cattleName.addEventListener('click', () => {
-        displayCattleImage(imageSrc);
+        displayCattleDetailsAndImage(name, imageSrc, details);
     });
     return cattleName;
 }
@@ -66,23 +75,16 @@ function displayCattleDetails(cattle) {
     `;
 }
 
-// Function to fetch and display cattle names
-function fetchAndDisplayCattleNames() {
-    fetch('db.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            cattleData = data.Cattles;
-            // Display all cattle initially
-            updateCattleList('');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+// Function to display cattle image and details when a name is clicked
+function displayCattleDetailsAndImage(name, imageSrc, details) {
+    const cattleDetailsContainer = document.getElementById('cattle-details');
+    cattleDetailsContainer.innerHTML = `
+        <h2>${name}</h2>
+        <img src="${imageSrc}" alt="Cattle Image" />
+        <p><strong>Origin:</strong> ${details.Origin}</p>
+        <p><strong>Description:</strong> ${details.Description}</p>
+        <p><strong>Mass:</strong> ${details.Mass}</p>
+    `;
 }
 
 // Add event listeners for the search input and button
@@ -103,6 +105,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call the fetchAndDisplayCattleNames function to load and display the cattle names
     fetchAndDisplayCattleNames();
 });
+
+// Function to fetch and display cattle names
+function fetchAndDisplayCattleNames() {
+    fetch('db.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            cattleData = data.Cattles;
+            // Display all cattle initially
+            updateCattleList('');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
 
 
 
