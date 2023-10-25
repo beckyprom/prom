@@ -1,0 +1,175 @@
+ {
+  "Cattles":[
+        {
+         "id": 1,
+         "name": "Holstain Friesian",
+         "image": "https://en.wikipedia.org/wiki/Holstein_Friesian#/media/File:Holstein_Friesian_UK_Yorkshire_July_2011.jpg",
+         "Origin": "United Kingdom",
+         "Description": "Dairy cattle",
+         "Mass": "female:380-500kg male:450-650kg"
+        },
+          {
+            "id": 2,
+            "name": "Hereford cattle",
+            "image": "https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2019/10/1-MAIN-miniature-herefords-012-c-Helen-Forsyth.jpg",
+            "Origin": "England",
+            "Description": "Dairy cattle",
+            "Mass": "female:450-600kg male:550-750kg"
+          },
+          {
+            "id": 3,
+            "name": "Simmental cattle",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Simmentaler_Fleckvieh.jpg/1024px-Simmentaler_Fleckvieh.jpg",
+            "Origin": "Simmental",
+            "Description": "Dairy cattle",
+            "Mass": "female:450-600 Male:550-850"
+          },
+          {
+            "id": 4,
+            "name": "Aberdeen Angus",
+            "image": "https://cdn.britannica.com/39/76939-050-B787E5BF/bull-Black-Angus.jpg?w=400&h=300&c=crop",
+            "Origin": "Scotland",
+            "Description": "Beef cattle",
+            "Mass": "female:650-850 male:1000-1300"
+          },
+          {
+            "id": 21,
+            "name": "Greyman cattle",
+            "image": "https://www.murraygreybrasil.com.br/site/wp-content/uploads/2019/09/Genetica-300x200.jpg",
+            "Origin": "Scotland",
+            "Description": "Beef cattle",
+            "Mass": "female:650-850kg Male:1000-1350kg"
+          },
+          {
+            "id": 5,
+            "name": "Limousin",
+            "image": "https://irishlimousin.com/wp-content/uploads/2021/07/1V8A7049-scaled-e1626919597746.jpg",
+            "Origin": "France",
+            "Description": "Dairy Cow",
+            "Mass": "female:650-850kg male:1000-1300kg"
+          },
+          {
+            "id": 6,
+            "name": "Belgian Blue",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Belgische_blauwe.jpg/1024px-Belgische_blauwe.jpg",
+            "Origin": "Belgium",
+            "Description": "Dairy Cow",
+            "Mass": "female:700kg male:1200kg"
+          },
+          {
+            "id": 7,
+            "name": "Brown Swiss cattle",
+            "image": "https://cdn.britannica.com/21/521-050-0C8E21D8/cow-Brown-Swiss.jpg",
+            "Origin": "United State",
+            "Description": "Dairy Cow",
+            "Mass": "female:700kg male:1300kg"
+          },
+          {
+            "id": 8,
+            "name": "Belted Galloway",
+            "image": "https://www.macduffbeef.co.uk/site/wp-content/uploads/2017/05/Belted_Galloway_cow_J1-1024x758.jpg",
+            "Origin": "Scotland Galloway",
+            "Description": "Dairy Cow",
+            "Mass": "female:450-680 male:700-1000"
+          },
+          {
+            "id": 9,
+            "name": "Red Angus",
+            "image": "https://images.squarespace-cdn.com/content/v1/55b18bbae4b004b7f779c630/1447630042800-I03TKE3ST7XZ3WDF2ITD/image-asset.jpeg?format=1500w",
+            "Origin": "United States Australia",
+            "Description": "Dairy Cow",
+            "Mass": "female:635 male:900"
+          },
+          {
+            "id": 10,
+            "name": "Brangus",
+            "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSqONqyyGo64i7BD2IZ-6o0cgtOt9dHwAqTC-3I9f3vd6VukE30oaRNmjQvJEcgiUyfh1VaPHCYJGykIYw",
+            "Origin": "United State",
+            "Description": "Beef Cattle",
+            "Mass": "female:500 male:750"
+          },
+          {
+            "id": 11,
+            "name": "Chillingham cattle",
+            "image": "https://ychef.files.bbci.co.uk/1600x900/p09vzs1y.webp",
+            "Origin": "England",
+            "Description": "graze the Chillingham Park in Northumberland",
+            "Mass": "female:450 male:530"
+          },
+          {
+            "id": 12,
+            "name": "Ayrshire cattle",
+            "image": "https://cdn.britannica.com/25/525-050-2C177308/Ayrshire-cow.jpg",
+            "Origin": "Scotland",
+            "Description": "Dairy Cow",
+            "Mass": "female:450-600 male:650-900"
+          },
+          {
+            "id": 13,
+            "name": "Agerolese",
+            "image": "https://www.researchgate.net/publication/276049236/figure/fig1/AS:612919201001472@1523142733214/A-female-cow-of-Agerolese-cattle-breed-Bar-50-cm.png",
+            "Origin": "Italy",
+            "Description": "Dairy Cow",
+            "Mass": "female:380-450 male:600-650"
+          },
+
+          {
+            "id": 14,
+            "name": "Illawarra Shorthoron",
+            "image": "https://cattleinternationalseries.weebly.com/uploads/1/6/5/8/16581252/illawarra-cattle-large_orig.jpg",
+            "Origin": "Australia",
+            "Description": "Dairy cattle",
+            "Mass": "female:450-600 Male:550-850"
+          },
+          {
+            "id": 15,
+            "name": "Dairy Shorthorn",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Dairy_Shorthorn_cow_at_Tullamore_Show.jpg/800px-Dairy_Shorthorn_cow_at_Tullamore_Show.jpg",
+            "Origin": "England",
+            "Description": "Dairy cattle",
+            "Mass": "female:450-600kg male:550-750kg"
+          },
+          {
+           "id": 16,
+           "name": "Burlina",
+           "image": "https://ifarmers.it/wp-content/uploads/2015/05/burlina-1024x768.jpg",
+           "Origin": "Italy",
+           "produce": "Dairy cattle",
+           "Mass": "female:400kg male:500kg"
+         },
+         {
+        "id": 17,
+        "name": "Nelore",
+        "image": "https://cdn.globalagmedia.com/uploads/files/breeds/nelorebull.jpg",
+        "Origin": "India",
+        "Description": "Beef cattle",
+        "Mass": "female:380-500kg male:450-650kg"
+      },
+      {
+        "id": 18,
+        "name": "Charolais",
+        "image": "https://www.charolais.co.uk/wp-content/uploads/2015/09/Untitled-1.jpg",
+        "Origin": "France",
+       "Description": "Beef cattle",
+        "Mass": "female:700-1200kg male:1000-1650kg"
+      },
+      {
+        "id": 19,
+        "name": "Australian Brangus",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz6G4N02bUU3oaHbVeEz4svoXDq4ABKUMJ8QZrjI4JsH5Qcx_D",
+        "Origin": "Australia ",
+        "Description": "Beef cattle",
+        "Mass": "female:800-1200kg male:1000-1550kg"
+      },
+
+
+      { "id": 20,
+        "name": "Adaptaur",
+        "image": "https://images.thewest.com.au/publication/B881397075Z/1575469042872_GC02HG8TJ.1-1.jpg?imwidth=828&impolicy=wan_v3",
+        "Origin": "Australia",
+        "Description": "Beef cattle",
+        "Mass": "female:750kg male:1000kg" 
+      }
+    ]
+  }
+      
