@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Beautiful Cattle</title>
+    <title>Cattles</title>
 </head>
 <body>
     <header>
@@ -24,15 +24,136 @@
     </div>
     <div class="cattle-image" id="cattle-image">
         <!-- Cattle image goes here -->
-    </div>  
-    <button id="dairy-info-button">Dairy Information</button>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        let cattleData = []; 
 
-    <div class="dairy-information" id="dairy-information"><button>
-        <!-- Dairy information goes here -->
-    </div> 
-    <!-- Add a container for the small cattle image -->
-<div class="cattle-image-small" id="cattle-image-small"></div><button id="home-page-button">Home Page</button> <!-- Home page button -->
-<script src="index.js"></script>
+        function filterCattle(searchText) {
+            searchText = searchText.toLowerCase();
+            return cattleData.filter(cattle => {
+                return (
+                    cattle.name.toLowerCase().includes(searchText) ||
+                    cattle.Description.toLowerCase().includes(searchText) ||
+                    cattle.Origin.toLowerCase().includes(searchText)
+                );
+            });
+        }
+
+        // Function to update the displayed cattle list
+        function updateCattleList(searchText) {
+            const cattleList = document.getElementById('cattle-list');
+            const cattleDetails = document.getElementById('cattle-details');
+
+            const filteredCattle = filterCattle(searchText);
+
+            cattleList.innerHTML = '';
+
+            filteredCattle.forEach(cattle => {
+                const cattleName = createCattleNameElement(cattle);
+                const detailsButton = createDetailsButton(cattle);
+
+                cattleList.appendChild(cattleName);
+                cattleList.appendChild(detailsButton);
+            });
+        }
+
+        // Function to create a cattle name element
+        function createCattleNameElement(cattle) {
+            const name = cattle.name;
+            const imageSrc = cattle.image;
+            const details = {
+                Origin: cattle.Origin,
+                Description: cattle.Description,
+                Mass: cattle.Mass
+            };
+
+            const cattleName = document.createElement('div');
+            cattleName.className = 'cattle-name'; // Add a CSS class for styling
+            cattleName.textContent = name;
+            cattleName.addEventListener('click', () => {
+                displayCattleDetailsAndImage(name, imageSrc, details);
+                displaySmallCattleImage(imageSrc); // Display small image when the name is clicked
+            });
+            return cattleName;
+        }
+
+        // Function to create a "Details" button
+        function createDetailsButton(cattle) {
+            const detailsButton = document.createElement('button');
+            detailsButton.textContent = 'Details';
+            detailsButton.addEventListener('click', () => {
+                displayCattleDetails(cattle.name, cattle);
+            });
+            return detailsButton;
+        }
+
+        // Function to display cattle details
+        function displayCattleDetails(name, cattle) {
+            const cattleDetailsContainer = document.getElementById('cattle-details');
+            cattleDetailsContainer.innerHTML = `
+                <h2>${name}</h2>
+                <p><strong>Origin:</strong> ${cattle.Origin}</p>
+                <p><strong>Description:</strong> ${cattle.Description}</p>
+                <p><strong>Mass:</strong> ${cattle.Mass}</p>
+            `;
+        }
+
+        // Function to display small cattle image when a name is clicked
+        function displaySmallCattleImage(imageSrc) {
+            const cattleImageSmallContainer = document.getElementById('cattle-image-small');
+            cattleImageSmallContainer.innerHTML = `<img src="${imageSrc}" alt="Cattle Image" class="small-image" />`;
+        }
+
+        // Function to display cattle image and details when a name is clicked
+        function displayCattleDetailsAndImage(name, imageSrc, details) {
+            const cattleDetailsContainer = document.getElementById('cattle-details');
+            cattleDetailsContainer.innerHTML = `
+                <h2>${name}</h2>
+                <img src="${imageSrc}" alt="Cattle Image" />
+                <p><strong>Origin:</strong> ${details.Origin}</p>
+                <p><strong>Description:</strong> ${details.Description}</p>
+                <p><strong>Mass:</strong> ${details.Mass}</p>
+            `;
+        }
+
+        // Add event listeners for the search input and button
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+
+            searchInput.addEventListener('input', () => {
+                const searchText = searchInput.value;
+                updateCattleList(searchText);
+            });
+
+            searchButton.addEventListener('click', () => {
+                const searchText = searchInput.value;
+                updateCattleList(searchText);
+            });
+
+            // Call the fetchAndDisplayCattleNames function to load and display the cattle names
+            fetchAndDisplayCattleNames();
+        });
+
+        // Function to fetch and display cattle names
+        function fetchAndDisplayCattleNames() {
+            fetch('db.json') // Change 'db.json' to the actual path of your JSON file
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    cattleData = data.Cattles; 
+            
+                    updateCattleList('');
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
 </body>
 </html>
-

@@ -13,8 +13,14 @@ header {
   color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 5cqb;
+  font-size: 2cqb;
   width: 100%;
+}
+/* Add CSS styling for the search input */
+.search-bar input {
+  width: 1000px; /* Set the width to your desired size */
+  height: 40px; /* Set the height to your desired size */
+  font-size: 14px; /* Set the font size as needed */
 }
 
 .container {
@@ -105,7 +111,7 @@ button:hover {
   /* Style the header */
   header {
     background-color: #0078d4;
-    color: #fff;
+    color: #9d620f;
     text-align: center;
     padding: 20px;
   }
@@ -118,17 +124,10 @@ button:hover {
     margin: 20px 0;
   }
 
-  /* Style the search input */
-  #search-input {
-    width: 300px;
-    height: 30px;
-    padding: 5px;
-    font-size: 16px;
-  }
 
-  /* Style the search button */
+  /* search colour yellow */
   #search-button {
-    background-color: #0078d4;
+    background-color: hsl(32, 100%, 42%);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -159,4 +158,11 @@ button:hover {
     margin-bottom: 10px;
     cursor: pointer;
   }
+  #search-input {
+    width: 200px; /* Adjust the width as per your requirements */
+    padding: 10px; /* Add padding for better aesthetics */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+
 }
