@@ -177,6 +177,42 @@
         "Origin":"The Jersey cow originated from the Island of Jersey, a small British Island in the English Channel near France",
         "Description":"Dairy cattle",
         "Mass": "female:450-600kg Male:550-850kg"
-      } 
+      },
+      {
+        "id":23,
+      "name":"Beefalo",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/XJ-B1_Beefalo.jpg/220px-XJ-B1_Beefalo.jpg",
+      "Origin":"America",
+      "Description":"Beef Cattle.eefalo is a species cross between Bison (buffalo) and domestic cattle of any breed. The purpose of the species cross was to blend the outstanding qualities of the Bison with outstanding qualities of the bovine breeds of the world.",
+      "Mass":"female:635 male:900" 
+    },
+    {
+     "id":24,
+     "name":"Aubrac",
+     "image":"https://upload.wikimedia.org/wikipedia/commons/b/be/Vache_de_race_aubrac_et_son_veau%2C_cropped.jpeg",
+     "Origin":"France",
+     "Description":"Beef Cattle. Aubrac cows were watched by the buronniers who milked them to produce the laguiole and tome cheeses. They are now intended almost exclusively for meat production, both in purebred and cross-breeding with other bulls. ",
+     "Mass":"Male: 950 kg Female: 650 kg" 
+    },
+    {
+      "id":25,
+      "name":"Menorquina cattle",
+      "image":"",
+      "Origin":"Spain",
+      "Description":"Dairy cattle.A breeders' association, the Associació de Ramaders de Bestiar Boví de Raça de Menorca, was formed in 1998, and the Menorquina breed received official recognition on 31 March 2000. At the end of 2014 the total population was recorded as 1536, of which 1196 were female and 340 male.",
+      "Mass":" Male: 700-800 kg; Female: 400-450 kg " 
+     },
+     {
+      "id":26,
+      "name":"Montbéliarde",
+      "image":"https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTaJ8jTW5ychSKiHCEfUQGzBzNFKcZZCUfg-GXEdeKZhqDdJhijR_vnpyIj4R1HqRYp-SV1nOHOE3KUgD8",
+      "Origin":"Montbéliard region of France",
+      "Description":"Dairy cattle. produces Up to 21 liters yield per day ",
+      "Mass":"female:450kg male:530kg" 
+     }
+     
+
+
     ]
   }
+
