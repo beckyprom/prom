@@ -1,4 +1,3 @@
-// Function to filter cattle based on search input
 function filterCattle(searchText) {
     searchText = searchText.toLowerCase();
     return cattleData.filter(cattle => {
@@ -120,9 +119,9 @@ function fetchAndDisplayCattleNames() {
         })
         .catch(error => {
             console.error('Error:', error);
+        });dairyInfoButton.addEventListener('click', () => {
+            const dairyInformation = document.getElementById('dairy-information');
+            dairyInformation.innerHTML = '<a href="https://youtu.be/q-EYh4pc9X4" target="_blank">Dairy Information Link</a>';
         });
+
 }
-
-
-
-

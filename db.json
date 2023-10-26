@@ -43,9 +43,9 @@
           {
             "id": 5,
             "name": "Limousin",
-            "image": "https://irishlimousin.com/wp-content/uploads/2021/07/1V8A7049-scaled-e1626919597746.jpg",
+            "image": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTTxk-57Q90EI96NP1H7gbzRcbB55n2X4jMOXJn5tg5a1g4yN2yOH8lsUni3gqNeD3jdspaxAPOT6DiXdQ",
             "Origin": "France",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:650-850kg male:1000-1300kg"
           },
           {
@@ -53,7 +53,7 @@
             "name": "Belgian Blue",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Belgische_blauwe.jpg/1024px-Belgische_blauwe.jpg",
             "Origin": "Belgium",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:700kg male:1200kg"
           },
           {
@@ -61,7 +61,7 @@
             "name": "Brown Swiss cattle",
             "image": "https://cdn.britannica.com/21/521-050-0C8E21D8/cow-Brown-Swiss.jpg",
             "Origin": "United State",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:700kg male:1300kg"
           },
           {
@@ -69,7 +69,7 @@
             "name": "Belted Galloway",
             "image": "https://www.macduffbeef.co.uk/site/wp-content/uploads/2017/05/Belted_Galloway_cow_J1-1024x758.jpg",
             "Origin": "Scotland Galloway",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:450-680 male:700-1000"
           },
           {
@@ -77,7 +77,7 @@
             "name": "Red Angus",
             "image": "https://images.squarespace-cdn.com/content/v1/55b18bbae4b004b7f779c630/1447630042800-I03TKE3ST7XZ3WDF2ITD/image-asset.jpeg?format=1500w",
             "Origin": "United States Australia",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:635 male:900"
           },
           {
@@ -93,15 +93,15 @@
             "name": "Chillingham cattle",
             "image": "https://ychef.files.bbci.co.uk/1600x900/p09vzs1y.webp",
             "Origin": "England",
-            "Description": "graze the Chillingham Park in Northumberland",
-            "Mass": "female:450 male:530"
+            "Description": "Beef Cattle",
+            "Mass": "female:450kg male:530kg"
           },
           {
             "id": 12,
             "name": "Ayrshire cattle",
             "image": "https://cdn.britannica.com/25/525-050-2C177308/Ayrshire-cow.jpg",
             "Origin": "Scotland",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:450-600 male:650-900"
           },
           {
@@ -109,7 +109,7 @@
             "name": "Agerolese",
             "image": "https://www.researchgate.net/publication/276049236/figure/fig1/AS:612919201001472@1523142733214/A-female-cow-of-Agerolese-cattle-breed-Bar-50-cm.png",
             "Origin": "Italy",
-            "Description": "Dairy Cow",
+            "Description": "Dairy cattle",
             "Mass": "female:380-450 male:600-650"
           },
 
@@ -134,7 +134,7 @@
            "name": "Burlina",
            "image": "https://ifarmers.it/wp-content/uploads/2015/05/burlina-1024x768.jpg",
            "Origin": "Italy",
-           "produce": "Dairy cattle",
+           "Description": "Dairy cattle",
            "Mass": "female:400kg male:500kg"
          },
          {
@@ -175,12 +175,8 @@
         "name":"Jersey",
         "image": "https://www.americandairy.com/wp-content/uploads/2021/05/0000404-jersey.jpg.webp",
         "Origin":"The Jersey cow originated from the Island of Jersey, a small British Island in the English Channel near France",
-        "Description":"Meet the Jersey cow  known for her large eyes and brown color, Jerseys also give milk that is high in butterfat and has a yellowish tinge.",
+        "Description":"Dairy cattle",
         "Mass": "female:450-600kg Male:550-850kg"
-      }
-
-      
-      
-      
+      } 
     ]
   }
