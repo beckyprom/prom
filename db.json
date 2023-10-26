@@ -169,6 +169,18 @@
         "Origin": "Australia",
         "Description": "Beef cattle",
         "Mass": "female:750kg male:1000kg" 
+      },
+      {
+        "id":22,
+        "name":"Jersey",
+        "image": "https://www.americandairy.com/wp-content/uploads/2021/05/0000404-jersey.jpg.webp",
+        "Origin":"The Jersey cow originated from the Island of Jersey, a small British Island in the English Channel near France",
+        "Description":"Meet the Jersey cow  known for her large eyes and brown color, Jerseys also give milk that is high in butterfat and has a yellowish tinge.",
+        "Mass": "female:450-600kg Male:550-850kg"
       }
+
+      
+      
+      
     ]
   }

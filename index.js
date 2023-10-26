@@ -1,5 +1,3 @@
-let cattleData; // Store the cattle data from your JSON file
-
 // Function to filter cattle based on search input
 function filterCattle(searchText) {
     searchText = searchText.toLowerCase();
@@ -99,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchButton.addEventListener('click', () => {
         const searchText = searchInput.value;
-        updateCattleList(searchText);
+        ReternCattleList(searchText);
     });
 
     // Call the fetchAndDisplayCattleNames function to load and display the cattle names
