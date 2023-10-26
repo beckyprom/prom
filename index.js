@@ -71,6 +71,31 @@ function displayCattleDetails(cattle) {
         <p><strong>Mass:</strong> ${cattle.Mass}</p>
     `;
 }
+// Function to display small cattle image when a name is clicked
+function displaySmallCattleImage(imageSrc) {
+    const cattleImageSmallContainer = document.getElementById('cattle-image-small');
+    cattleImageSmallContainer.innerHTML = `<img src="${imageSrc}" alt="Cattle Image" class="small-image" />`;
+}
+
+// Function to create a cattle name element
+function createCattleNameElement(cattle) {
+    const name = cattle.name;
+    const imageSrc = cattle.image;
+    const details = {
+        Origin: cattle.Origin,
+        Description: cattle.Description,
+        Mass: cattle.Mass
+    };
+
+    const cattleName = document.createElement('div');
+    cattleName.className = 'cattle-name'; // Add a CSS class for styling
+    cattleName.textContent = name;
+    cattleName.addEventListener('click', () => {
+        displayCattleDetailsAndImage(name, imageSrc, details);
+        displaySmallCattleImage(imageSrc); // Display small image when the name is clicked
+    });
+    return cattleName;
+}
 
 // Function to display cattle image and details when a name is clicked
 function displayCattleDetailsAndImage(name, imageSrc, details) {
@@ -123,5 +148,19 @@ function fetchAndDisplayCattleNames() {
             const dairyInformation = document.getElementById('dairy-information');
             dairyInformation.innerHTML = '<a href="https://youtu.be/q-EYh4pc9X4" target="_blank">Dairy Information Link</a>';
         });
+       // Event listener for the Home Page button
+const homePageButton = document.getElementById('home-page-button');
+homePageButton.addEventListener('click', () => {
+    // Clear cattle image and details
+    const cattleDetailsContainer = document.getElementById('cattle-details');
+    cattleDetailsContainer.innerHTML = '';
+
+    const cattleImageContainer = document.getElementById('cattle-image');
+    cattleImageContainer.innerHTML = '';
+
+    // Clear dairy information
+    const dairyInformation = document.getElementById('dairy-information');
+    dairyInformation.innerHTML = '';
+}); 
 
 }

@@ -5,15 +5,15 @@
          "name": "Holstain Friesian",
          "image": "https://cdn.agriland.ie/uploads/2016/07/IMG_6787-1280x720.jpg",
          "Origin": "United Kingdom",
-         "Description": "Dairy cattle",
+         "Description": "Dairy cattle.The average  Holstein cow will typically produce between 22 and 40 litres of milk, every day, or 12,000 litres per lactation (mature equivalent). This will depend on their stage of lactation and their age,",
          "Mass": "female:380-500kg male:450-650kg"
         },
           {
             "id": 2,
             "name": "Hereford cattle",
-            "image": "https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2019/10/1-MAIN-miniature-herefords-012-c-Helen-Forsyth.jpg",
+            "image": "https://breeds.okstate.edu/cattle/site-files/images/hereford.jpg",
             "Origin": "England",
-            "Description": "Dairy cattle",
+            "Description": "Beef Cattle. Herefords led the way in revolutionizing beef production in America, largely through the traits of doing ability and early maturity -- getting fat at an early age and producing the ideal in baby beef.",
             "Mass": "female:450-600kg male:550-750kg"
           },
           {
@@ -21,15 +21,15 @@
             "name": "Simmental cattle",
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Simmentaler_Fleckvieh.jpg/1024px-Simmentaler_Fleckvieh.jpg",
             "Origin": "Simmental",
-            "Description": "Dairy cattle",
-            "Mass": "female:450-600 Male:550-850"
+            "Description": "Dairy cattle.Up to 25,4 liters yield per day.Simmental accounts for almost half of the cattle of the western regions of Switzerland, Austria and Germany. Simental, smaller than Charolais and Limousin, has been used for milk, beef and draft. It is yellowish brown or red with characteristic white markingsproduces ",
+             "Mass": "female:450-600 Male:550-850"
           },
-          {
+           {
             "id": 4,
             "name": "Aberdeen Angus",
             "image": "https://cdn.britannica.com/39/76939-050-B787E5BF/bull-Black-Angus.jpg?w=400&h=300&c=crop",
             "Origin": "Scotland",
-            "Description": "Beef cattle",
+            "Description": "Beef cattle. It's a sturdier breed that grew popular among farmers thanks to its ability to produce meat with a higher marbling content (a.k.a., those white lines of fat that make your meat taste so good.",
             "Mass": "female:650-850 male:1000-1300"
           },
           {
