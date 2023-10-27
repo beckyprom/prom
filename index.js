@@ -71,11 +71,7 @@ function displayCattleDetails(cattle) {
         <p><strong>Mass:</strong> ${cattle.Mass}</p>
     `;
 }
-// Function to display small cattle image when a name is clicked
-function displaySmallCattleImage(imageSrc) {
-    const cattleImageSmallContainer = document.getElementById('cattle-image-small');
-    cattleImageSmallContainer.innerHTML = `<img src="${imageSrc}" alt="Cattle Image" class="small-image" />`;
-}
+
 
 // Function to create a cattle name element
 function createCattleNameElement(cattle) {
